@@ -51,6 +51,7 @@ body{
     border-radius: 2rem;
     min-height: 45rem;
     max-width: 60rem;
+    box-shadow: 5px 5px 20px 10px hsl(221, 100%, 96%);
 }
 
 
@@ -193,4 +194,17 @@ body{
 
 .container .right-content .tag .out-off{
     align-self: center;
+}
+
+.container .right-content .btn{
+    display: flex;
+    background-color: hsl(224, 30%, 27%);
+    font-size: 1.5rem;
+    color: hsl(221, 100%, 96%);
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 85%;
+    margin: 4rem auto;
+    border-radius: 2rem;
 }
