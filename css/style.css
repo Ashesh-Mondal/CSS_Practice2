@@ -20,24 +20,48 @@ body{
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
+
+
+/* ######################### utility classes ############################# */
+
 .out-off{
     font-size: 1.5rem;
     font-weight: 500;
 }
 
+.tag-name{
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.tag{
+    height: 4rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+}
+
+.icon{
+    margin-right: 2rem;
+}
+
+/* ########################## main-container styling ############################## */
+
 .container{
     display: flex;
-    border: 2px solid red;
     border-radius: 2rem;
     min-height: 45rem;
-    min-width: 55rem;
+    max-width: 60rem;
 }
+
+
+
+/* ############################# left-container styling ############################## */
 
 .container .left-content{
     padding: 2rem;
     background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 2rem;
-    width: 55%;
+    width: 50%;
 }
 
 .container .left-content .your-result{
@@ -67,8 +91,6 @@ body{
 
 .container .left-content .marks .inside-circle-container{
     position: absolute;
-    top: 37%;
-    left: 39%;
 }
 
 .container .left-content .marks .inside-circle-container .total-marks-obtained{
@@ -98,4 +120,77 @@ body{
     text-align: center;
     margin-top: 2rem;
     color: hsl(241, 100%, 89%);
+}
+
+
+
+/* ############################## styling right-container ################################ */
+
+.container .right-content{
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 50%;
+}
+
+.container .right-content .summary{
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(224, 30%, 27%);
+    margin: 1.5rem 0;
+}
+
+.right-content .reaction-tag{
+    display: flex;
+    width: 25rem;
+    justify-content: space-around;
+    background-color: hsla(0, 100%, 67%, 0.17);
+}
+
+.right-content .reaction-tag .tag-name-1{
+    display: flex;
+    flex-direction: row;
+    color: hsl(0, 100%, 67%);
+}
+
+.right-content .memory-tag{
+    display: flex;
+    width: 25rem;
+    justify-content: space-around;
+    background-color: hsla(39, 100%, 56%, 0.17);
+}
+
+.right-content .memory-tag .tag-name-2{
+    display: flex;
+    flex-direction: row;
+    color: hsl(39, 100%, 56%);
+}
+
+.right-content .verbal-tag{
+    display: flex;
+    width: 25rem;
+    justify-content: space-around;
+    background-color: hsla(166, 100%, 37%, 0.17);
+}
+
+.right-content .verbal-tag .tag-name-3{
+    display: flex;
+    flex-direction: row;
+    color: hsl(166, 100%, 37%);
+}
+
+.right-content .visual-tag{
+    display: flex;
+    width: 25rem;
+    justify-content: space-around;
+    background-color: hsla(234, 85%, 45%, 0.17);
+}
+
+.right-content .visual-tag .tag-name-4{
+    display: flex;
+    flex-direction: row;
+    color: hsl(234, 85%, 45%);
+}
+
+.container .right-content .tag .out-off{
+    align-self: center;
 }
