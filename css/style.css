@@ -209,6 +209,11 @@ body{
     border-radius: 2rem;
 }
 
+.container .right-content .btn:hover{
+    background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
 
 
 /* ############################## for small screen ################################ */
@@ -279,8 +284,9 @@ body{
         margin: auto;
     }
 
-    .right-content .main-container .tag svg{
-        padding-left: 2rem;
+    .container .right-content .btn:hover{
+        background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        cursor: pointer;
     }
 
 }
